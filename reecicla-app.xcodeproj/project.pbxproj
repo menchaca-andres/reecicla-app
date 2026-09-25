@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		41FE5A5530671D14008DE9BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FE5A3F30671D11008DE9BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FE5A4630671D11008DE9BB;
+			remoteInfo = "reecicla-app";
+		};
+		41FE5A5F30671D14008DE9BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FE5A3F30671D11008DE9BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FE5A4630671D11008DE9BB;
+			remoteInfo = "reecicla-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41FE5A4730671D11008DE9BB /* reecicla-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reecicla-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FE5A5430671D14008DE9BB /* reecicla-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reecicla-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FE5A5E30671D14008DE9BB /* reecicla-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reecicla-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		41FE5A4930671D11008DE9BB /* reecicla-app */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "reecicla-app";
+			sourceTree = "<group>";
+		};
+		41FE5A5730671D14008DE9BB /* reecicla-appTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "reecicla-appTests";
+			sourceTree = "<group>";
+		};
+		41FE5A6130671D14008DE9BB /* reecicla-appUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "reecicla-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41FE5A4430671D11008DE9BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5130671D14008DE9BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5B30671D14008DE9BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41FE5A3E30671D11008DE9BB = {
+			isa = PBXGroup;
+			children = (
+				41FE5A4930671D11008DE9BB /* reecicla-app */,
+				41FE5A5730671D14008DE9BB /* reecicla-appTests */,
+				41FE5A6130671D14008DE9BB /* reecicla-appUITests */,
+				41FE5A4830671D11008DE9BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41FE5A4830671D11008DE9BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41FE5A4730671D11008DE9BB /* reecicla-app.app */,
+				41FE5A5430671D14008DE9BB /* reecicla-appTests.xctest */,
+				41FE5A5E30671D14008DE9BB /* reecicla-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41FE5A4630671D11008DE9BB /* reecicla-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE5A6630671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-app" */;
+			buildPhases = (
+				41FE5A4330671D11008DE9BB /* Sources */,
+				41FE5A4430671D11008DE9BB /* Frameworks */,
+				41FE5A4530671D11008DE9BB /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				41FE5A4930671D11008DE9BB /* reecicla-app */,
+			);
+			name = "reecicla-app";
+			productName = "reecicla-app";
+			productReference = 41FE5A4730671D11008DE9BB /* reecicla-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41FE5A5330671D14008DE9BB /* reecicla-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE5A6930671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-appTests" */;
+			buildPhases = (
+				41FE5A5030671D14008DE9BB /* Sources */,
+				41FE5A5130671D14008DE9BB /* Frameworks */,
+				41FE5A5230671D14008DE9BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41FE5A5630671D14008DE9BB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				41FE5A5730671D14008DE9BB /* reecicla-appTests */,
+			);
+			name = "reecicla-appTests";
+			productName = "reecicla-appTests";
+			productReference = 41FE5A5430671D14008DE9BB /* reecicla-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41FE5A5D30671D14008DE9BB /* reecicla-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE5A6C30671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-appUITests" */;
+			buildPhases = (
+				41FE5A5A30671D14008DE9BB /* Sources */,
+				41FE5A5B30671D14008DE9BB /* Frameworks */,
+				41FE5A5C30671D14008DE9BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41FE5A6030671D14008DE9BB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				41FE5A6130671D14008DE9BB /* reecicla-appUITests */,
+			);
+			name = "reecicla-appUITests";
+			productName = "reecicla-appUITests";
+			productReference = 41FE5A5E30671D14008DE9BB /* reecicla-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41FE5A3F30671D11008DE9BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					41FE5A4630671D11008DE9BB = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					41FE5A5330671D14008DE9BB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 41FE5A4630671D11008DE9BB;
+					};
+					41FE5A5D30671D14008DE9BB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 41FE5A4630671D11008DE9BB;
+					};
+				};
+			};
+			buildConfigurationList = 41FE5A4230671D11008DE9BB /* Build configuration list for PBXProject "reecicla-app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41FE5A3E30671D11008DE9BB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 41FE5A4830671D11008DE9BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41FE5A4630671D11008DE9BB /* reecicla-app */,
+				41FE5A5330671D14008DE9BB /* reecicla-appTests */,
+				41FE5A5D30671D14008DE9BB /* reecicla-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41FE5A4530671D11008DE9BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5230671D14008DE9BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5C30671D14008DE9BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41FE5A4330671D11008DE9BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5030671D14008DE9BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		41FE5A5A30671D14008DE9BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41FE5A5630671D14008DE9BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41FE5A4630671D11008DE9BB /* reecicla-app */;
+			targetProxy = 41FE5A5530671D14008DE9BB /* PBXContainerItemProxy */;
+		};
+		41FE5A6030671D14008DE9BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41FE5A4630671D11008DE9BB /* reecicla-app */;
+			targetProxy = 41FE5A5F30671D14008DE9BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41FE5A6430671D14008DE9BB /* Debug configuration for PBXProject "reecicla-app" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41FE5A6530671D14008DE9BB /* Release configuration for PBXProject "reecicla-app" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41FE5A6730671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-app" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41FE5A6830671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-app" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41FE5A6A30671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-appTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reecicla-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/reecicla-app";
+			};
+			name = Debug;
+		};
+		41FE5A6B30671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-appTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reecicla-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/reecicla-app";
+			};
+			name = Release;
+		};
+		41FE5A6D30671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-appUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "reecicla-app";
+			};
+			name = Debug;
+		};
+		41FE5A6E30671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-appUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mrvro.reecicla-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "reecicla-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41FE5A4230671D11008DE9BB /* Build configuration list for PBXProject "reecicla-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE5A6430671D14008DE9BB /* Debug configuration for PBXProject "reecicla-app" */,
+				41FE5A6530671D14008DE9BB /* Release configuration for PBXProject "reecicla-app" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		41FE5A6630671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE5A6730671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-app" */,
+				41FE5A6830671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-app" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		41FE5A6930671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE5A6A30671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-appTests" */,
+				41FE5A6B30671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-appTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		41FE5A6C30671D14008DE9BB /* Build configuration list for PBXNativeTarget "reecicla-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE5A6D30671D14008DE9BB /* Debug configuration for PBXNativeTarget "reecicla-appUITests" */,
+				41FE5A6E30671D14008DE9BB /* Release configuration for PBXNativeTarget "reecicla-appUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41FE5A3F30671D11008DE9BB /* Project object */;
+	validationLevel = 1;
+}
