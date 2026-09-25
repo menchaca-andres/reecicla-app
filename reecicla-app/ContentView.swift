@@ -1,24 +1,18 @@
-//
-//  ContentView.swift
-//  reecicla-app
-//
-//  Created by Andrés on 25/9/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text("Mi primera app")
+                .font(.largeTitle)
+                .bold()
+
+            Text("¡Hola desde iOS!")
+
+            Button("Presióname") {
+                print("Botón presionado")
+            }
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
