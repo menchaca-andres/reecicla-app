@@ -1,0 +1,5 @@
+// copia este archivo como Config.swift y reemplazalo con tu IP local.
+// Para producción cambia el valor de baseURL a tu IP de producción.
+enum AppConfig {
+    static let baseURL = "http://YOUR_LOCAL_IP:3000"
+}
