@@ -13,3 +13,5 @@ xcuserdata/
 
 # Xcode user settings
 *.xcworkspace/xcuserdata/
+# Local environment config (like .env — never commit)
+reecicla-app/Network/Config.swift
