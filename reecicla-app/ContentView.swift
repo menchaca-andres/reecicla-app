@@ -1,18 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authVM: AuthViewModel
+
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Mi primera app")
-                .font(.largeTitle)
-                .bold()
-
-            Text("¡Hola desde iOS!")
-
-            Button("Presióname") {
-                print("Botón presionado")
+        Group {
+            if authVM.isAuthenticated {
+                HomeView()
+            } else {
+                LoginView()
             }
         }
-        .padding()
+        .animation(.easeInOut, value: authVM.isAuthenticated)
     }
 }
