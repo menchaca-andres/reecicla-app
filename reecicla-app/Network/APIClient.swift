@@ -9,10 +9,10 @@ enum APIClientError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .invalidResponse:      return "Invalid server response."
+        case .invalidResponse:      return "Respuesta inválida del servidor."
         case .serverError(let msg): return msg
-        case .decodingError(let e): return "Decoding error: \(e.localizedDescription)"
-        case .unauthorized:         return "Session expired. Please log in again."
+        case .decodingError(let e): return "Error de decodificación: \(e.localizedDescription)"
+        case .unauthorized:         return "Sesión expirada. Inicia sesión nuevamente."
         }
     }
 }
@@ -33,10 +33,10 @@ enum Keychain {
 
     static func loadToken() -> String? {
         let query: [String: Any] = [
-            kSecClass as String:            kSecClassGenericPassword,
-            kSecAttrAccount as String:      tokenKey,
-            kSecReturnData as String:       true,
-            kSecMatchLimit as String:       kSecMatchLimitOne,
+            kSecClass as String:       kSecClassGenericPassword,
+            kSecAttrAccount as String: tokenKey,
+            kSecReturnData as String:  true,
+            kSecMatchLimit as String:  kSecMatchLimitOne,
         ]
         var result: AnyObject?
         guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess,
@@ -62,12 +62,17 @@ final class APIClient {
 
     func post<Body: Encodable, Response: Decodable>(
         endpoint: Endpoint,
-        body: Body
+        body: Body,
+        authenticated: Bool = false
     ) async throws -> Response {
         var request = URLRequest(url: endpoint.url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = try JSONEncoder().encode(body)
+        if authenticated {
+            guard let token = Keychain.loadToken() else { throw APIClientError.unauthorized }
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
         return try await perform(request)
     }
 
@@ -93,7 +98,9 @@ final class APIClient {
 
         guard (200...299).contains(http.statusCode) else {
             let apiError = try? decoder.decode(APIError.self, from: data)
-            throw APIClientError.serverError(apiError?.error ?? "Unknown server error (\(http.statusCode))")
+            throw APIClientError.serverError(
+                apiError?.error ?? "Error del servidor (\(http.statusCode))"
+            )
         }
 
         do {
