@@ -6,16 +6,15 @@ final class AuthService {
 
     private init() {}
 
-    func login(tenantId: String, email: String, password: String) async throws -> AuthResponse {
-        let body = LoginRequest(tenant_id: tenantId, email: email, password: password)
+    func login(email: String, password: String) async throws -> AuthResponse {
+        let body = LoginRequest(email: email, password: password)
         let response: AuthResponse = try await client.post(endpoint: .login, body: body)
         Keychain.save(token: response.token)
         return response
     }
 
-    func register(tenantId: String, email: String, password: String, name: String?, phone: String?) async throws -> AuthResponse {
+    func register(email: String, password: String, name: String?, phone: String?) async throws -> AuthResponse {
         let body = RegisterRequest(
-            tenant_id: tenantId,
             email: email,
             password: password,
             name: name?.isEmpty == false ? name : nil,

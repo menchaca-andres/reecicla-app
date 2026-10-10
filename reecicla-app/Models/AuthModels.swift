@@ -1,13 +1,11 @@
 import Foundation
 
 struct LoginRequest: Encodable {
-    let tenant_id: String
     let email: String
     let password: String
 }
 
 struct RegisterRequest: Encodable {
-    let tenant_id: String
     let email: String
     let password: String
     let name: String?

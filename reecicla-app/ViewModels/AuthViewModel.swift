@@ -13,9 +13,9 @@ final class AuthViewModel: ObservableObject {
         self.isAuthenticated = service.isLoggedIn
     }
 
-    func login(tenantId: String, email: String, password: String) async {
+    func login(email: String, password: String) async {
         await run {
-            let response = try await self.service.login(tenantId: tenantId, email: email, password: password)
+            let response = try await self.service.login(email: email, password: password)
             await MainActor.run {
                 self.currentUser = response.user
                 self.isAuthenticated = true
@@ -23,10 +23,9 @@ final class AuthViewModel: ObservableObject {
         }
     }
 
-    func register(tenantId: String, email: String, password: String, name: String, phone: String) async {
+    func register(email: String, password: String, name: String, phone: String) async {
         await run {
             let response = try await self.service.register(
-                tenantId: tenantId,
                 email: email,
                 password: password,
                 name: name,

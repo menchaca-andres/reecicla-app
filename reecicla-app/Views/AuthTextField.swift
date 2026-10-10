@@ -10,7 +10,7 @@ struct AuthTextField: View {
     var isSecure: Bool = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 5) {
                 if let icon {
                     Image(systemName: icon)
@@ -18,7 +18,7 @@ struct AuthTextField: View {
                         .foregroundColor(iconColor)
                 }
                 Text(label)
-                    .font(.system(size: 12, weight: .semibold))
+                    .font(.system(size: 11, weight: .medium))
                     .foregroundColor(.textMuted)
             }
 
@@ -32,15 +32,15 @@ struct AuthTextField: View {
                         .autocorrectionDisabled()
                 }
             }
-            .font(.system(size: 14))
+            .font(.system(size: 14, weight: .regular))
             .foregroundColor(.textMain)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 11)
+            .padding(.horizontal, 16)
+            .frame(height: 44)
             .background(Color.white)
-            .cornerRadius(10)
+            .cornerRadius(12)
             .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.borderColor, lineWidth: 1)
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color(hex: "d2d2d7"), lineWidth: 1)
             )
         }
     }

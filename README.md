@@ -23,6 +23,7 @@ reecicla-app/
 │   ├── LoginView.swift       ← Pantalla Auth con tab switcher Login/Registro
 │   ├── RegisterView.swift    ← Stub (formulario embebido en LoginView)
 │   ├── HomeView.swift        ← Dashboard post-login
+│   ├── GuestOrderTrackingView.swift ← Seguimiento privado sin cuenta
 │   ├── AuthTextField.swift   ← Campo de texto reutilizable con ícono
 │   └── ColorExtension.swift  ← Design tokens (mirrors reecicla-frontend CSS vars)
 ├── ContentView.swift         ← Router: Login ↔ Home según estado de autenticación
@@ -46,12 +47,13 @@ reecicla-app/
 cp reecicla-app/Network/Config.swift.example reecicla-app/Network/Config.swift
 ```
 
-Edita `Config.swift` y reemplaza con tu IP o URL:
+Edita `Config.swift` y reemplaza con tu IP o URL y el slug del negocio:
 
 ```swift
 enum AppConfig {
     // Desarrollo local — dispositivo físico en la misma red WiFi
     static let baseURL = "http://192.168.X.X:3000"
+    static let tenantSlug = "demo"
 
     // Producción
     // static let baseURL = "https://api.reecicla.com"
@@ -92,6 +94,12 @@ La app implementa autenticación con **JWT** almacenado en el **Keychain** del d
 
 El token se renueva automáticamente en cada login y persiste entre sesiones hasta que el usuario cierra sesión explícitamente.
 
+También se puede cotizar y aceptar como invitado, sin crear cuenta. Para aceptar, el cliente ingresa nombre, correo, teléfono y dirección; verifica el código enviado a su correo y recibe un enlace privado de seguimiento. En la pantalla de seguimiento se puede pegar ese enlace completo o su token.
+
+La app recibe enlaces `reecicla://seguimiento/<token>`. Los enlaces web del correo se abren en el navegador salvo que el dominio de producción configure Universal Links y Associated Domains para la app.
+
+El envío del OTP y del enlace depende del SMTP configurado en el backend. Para Gmail, configura las variables `SMTP_*` en el `.env` raíz del backend; la app no almacena credenciales de correo.
+
 ---
 
 ## 🌐 Endpoints consumidos
@@ -100,9 +108,12 @@ Todos los requests van a través del **API Gateway** en el puerto `3000`.
 
 | Método | Endpoint | Descripción |
 |---|---|---|
-| `POST` | `/api/auth/register` | Registro de cliente |
-| `POST` | `/api/auth/login` | Login + emisión de JWT |
+| `POST` | `/recicla/{slug}/auth/register` | Registro de cliente |
+| `POST` | `/recicla/{slug}/auth/login` | Login + emisión de JWT |
 | `GET` | `/api/auth/me` | Perfil del usuario autenticado |
+| `POST` | `/recicla/{slug}/quotation/quotes` | Crear cotización con o sin sesión |
+| `POST` | `/recicla/{slug}/quotation/quotes/{id}/accept` | Aceptar; invitado verifica el correo por OTP |
+| `GET` | `/recicla/{slug}/orders/tracking/{token}` | Consultar seguimiento privado sin sesión |
 
 ---
 
@@ -122,6 +133,6 @@ El sistema de diseño replica los tokens CSS de `reecicla-frontend`:
 
 ## 📝 Notas de desarrollo
 
-- **`Config.swift` cambia con cada red WiFi** — solo editás la IP, un archivo, nunca sube al repo.
+- **`Config.swift` cambia con cada red WiFi** — solo editás la IP y el slug del negocio, nunca sube al repo.
 - El backend requiere `tenant_id` en todos los requests de auth — el campo está expuesto en el formulario con valor por defecto `reecicla`.
 - El `Info.plist` tiene `NSAllowsLocalNetworking: true` para permitir HTTP (no HTTPS) en desarrollo local. En producción se usará HTTPS y esta clave puede eliminarse.

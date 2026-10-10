@@ -1,32 +1,33 @@
 import SwiftUI
 
 extension Color {
-    static let bgPage      = Color(hex: "f8fafc")
+    static let bgPage      = Color.white
     static let bgCard      = Color.white
-    static let bgSubtle    = Color(hex: "f1f5f9")
-    static let borderColor = Color(hex: "e2e8f0")
-    static let borderHover = Color(hex: "cbd5e1")
+    static let bgSubtle    = Color(hex: "e8e8ed")
+    static let borderColor = Color.black.opacity(0.08)
+    static let borderHover = Color.black.opacity(0.15)
 
-    static let bluePrimary = Color(hex: "2563eb")
-    static let blueHover   = Color(hex: "1d4ed8")
-    static let blueLight   = Color(hex: "eff6ff")
-    static let blueBorder  = Color(hex: "bfdbfe")
+    static let bluePrimary = Color(hex: "0071e3")
+    static let blueHover   = Color(hex: "0077ed")
+    static let blueLight   = bluePrimary.opacity(0.06)
+    static let blueBorder  = bluePrimary.opacity(0.3)
 
-    static let greenPrimary = Color(hex: "16a34a")
-    static let greenLight   = Color(hex: "f0fdf4")
-    static let greenBorder  = Color(hex: "bbf7d0")
+    static let greenPrimary = Color(hex: "34c759")
+    static let greenLight   = greenPrimary.opacity(0.1)
+    static let greenBorder  = greenPrimary.opacity(0.25)
 
-    static let redPrimary  = Color(hex: "dc2626")
-    static let redLight    = Color(hex: "fef2f2")
-    static let redBorder   = Color(hex: "fecaca")
+    static let redPrimary  = Color(hex: "ff3b30")
+    static let redLight    = redPrimary.opacity(0.1)
+    static let redBorder   = redPrimary.opacity(0.2)
 
-    static let orangePrimary = Color(hex: "ea580c")
-    static let orangeLight   = Color(hex: "fff7ed")
-    static let orangeBorder  = Color(hex: "fed7aa")
+    static let orangePrimary = Color(hex: "ff9500")
+    static let orangeLight   = orangePrimary.opacity(0.1)
+    static let orangeBorder  = orangePrimary.opacity(0.25)
 
-    static let textMain  = Color(hex: "0f172a")
-    static let textMuted = Color(hex: "64748b")
-    static let textLight = Color(hex: "94a3b8")
+    static let textMain  = Color(hex: "1d1d1f")
+    static let textSecondary = Color(hex: "6e6e73")
+    static let textMuted = Color(hex: "86868b")
+    static let textLight = Color(hex: "9a9aa0")
 
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
